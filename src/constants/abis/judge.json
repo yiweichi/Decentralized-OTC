@@ -1,0 +1,79 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "requirePrecentSubjectToseller",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "requirePrecentDepositToseller",
+				"type": "uint8"
+			}
+		],
+		"name": "dispute",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "r",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "getArbitrationFee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "arbitrationFee",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "getResult",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "precentSubjectToseller",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "precentDepositToseller",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bool",
+				"name": "resultState",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

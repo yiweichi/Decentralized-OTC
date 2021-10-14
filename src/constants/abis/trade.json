@@ -1,0 +1,948 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "Buyerdisputeblocknum",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Sellerdisputeblocknum",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "VipfeeReceiver",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "x",
+				"type": "uint256"
+			}
+		],
+		"name": "adjustTradeLimit",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "allOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "salenumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "describe",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "sellerContactInfo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "buyerContactInfo",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lockedblocknumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "Currency",
+				"type": "string"
+			},
+			{
+				"internalType": "address payable",
+				"name": "seller",
+				"type": "address"
+			},
+			{
+				"internalType": "address payable",
+				"name": "buyer",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "state",
+				"type": "uint8"
+			},
+			{
+				"internalType": "address",
+				"name": "arbitration",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "erc20address",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sellerLiquidataedDamages",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "buyerLiquidataedDamages",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "allOrderLength",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "buyerdisputeblocknum",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "cancelSaleOrder",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "rr",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "comfirmTransaction",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "r",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "x",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "y",
+				"type": "uint8"
+			}
+		],
+		"name": "dispute",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "execute",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lineNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getAllMyOrder",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salenumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "describe",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Currency",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "state",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "arbitration",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "erc20address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "buyerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockedblocknumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sellerContactInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "buyerContactInfo",
+						"type": "string"
+					}
+				],
+				"internalType": "struct trading.Order2[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lineNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getMyBuyOrder",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salenumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "describe",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Currency",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "state",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "arbitration",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "erc20address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "buyerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockedblocknumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sellerContactInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "buyerContactInfo",
+						"type": "string"
+					}
+				],
+				"internalType": "struct trading.Order2[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lineNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getMySaleOrder",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salenumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "describe",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Currency",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "state",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "arbitration",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "erc20address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "buyerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockedblocknumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sellerContactInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "buyerContactInfo",
+						"type": "string"
+					}
+				],
+				"internalType": "struct trading.Order2[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "buyerContactInfo",
+				"type": "string"
+			}
+		],
+		"name": "lockSaleOrder",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "myBuyOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "mySaleOrder",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "salenumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "describe",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "sellerContactInfo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "currency",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "arbitration",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "erc20address",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "buyerLiquidataedDamages",
+				"type": "uint256"
+			}
+		],
+		"name": "putSaleOrder",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "quantity_min",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quanity_max",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price_min",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price_max",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "currency",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "linenumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "erc20address",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sellerDeposit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "buyerDeposit",
+				"type": "uint256"
+			}
+		],
+		"name": "queryOrder",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salenumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "describe",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Currency",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "state",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "arbitration",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "erc20address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "buyerLiquidataedDamages",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockedblocknumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sellerContactInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "buyerContactInfo",
+						"type": "string"
+					}
+				],
+				"internalType": "struct trading.Order2[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "sellerdisputeblocknum",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "x",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "y",
+				"type": "uint8"
+			}
+		],
+		"name": "setVip",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "x",
+				"type": "uint256"
+			}
+		],
+		"name": "setbuyerdisputeblocknum",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "x",
+				"type": "uint256"
+			}
+		],
+		"name": "setsellerdisputeblocknum",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "x",
+				"type": "address"
+			}
+		],
+		"name": "setvipfeeReceiver",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "surrender",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "r",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tradeLimit",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "vip",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
